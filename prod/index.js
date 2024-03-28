@@ -1,6 +1,6 @@
 "use strict";
-function add(num1, num2) {
-    return num1 + num2;
-}
-let result = add(2, 3);
-console.log(result);
+let price = 40;
+let item = "apple";
+let inStore = true;
+let value; // variavel do tipo ANY (ma pratica)
+value = 10;

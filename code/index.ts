@@ -1,6 +1,6 @@
-function add(num1: number, num2: number) {
-    return num1 + num2
-}
+let price = 40
+let item = "apple"
+let inStore = true
 
-let result = add(2, 3)
-console.log(result)
+let value // variavel do tipo ANY (ma pratica)
+value = 10
