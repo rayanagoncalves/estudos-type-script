@@ -27,3 +27,10 @@ function add(num1: number, num2: number): number {
 }
 
 add(20, 10)
+
+// function void
+function result(price: number) {
+    console.log('The result is: ' + price)
+}
+
+result(add(6, 3))
