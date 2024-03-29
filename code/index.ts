@@ -34,3 +34,12 @@ function result(price: number) {
 }
 
 result(add(6, 3))
+
+// objects
+const newUser = {
+    firstName: 'Rayana',
+    age: 24, 
+    lastName: 'C'
+}
+
+newUser.lastName = 'Cunha'

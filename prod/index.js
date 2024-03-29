@@ -30,3 +30,10 @@ function result(price) {
     console.log('The result is: ' + price);
 }
 result(add(6, 3));
+// objects
+const newUser = {
+    firstName: 'Rayana',
+    age: 24,
+    lastName: 'C'
+};
+newUser.lastName = 'Cunha';
