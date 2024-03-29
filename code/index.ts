@@ -54,3 +54,13 @@ itemInput = 'Apple'
 if(itemInput === 'string') {
     itemName = itemInput
 }
+
+// Never Type
+function generateError(message: string, code: number): never {
+    throw {
+        message: message,
+        errorCode: code
+    }
+}
+
+console.log(generateError('The application crashed', 500))

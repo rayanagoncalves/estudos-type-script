@@ -37,3 +37,19 @@ const newUser = {
     lastName: 'C'
 };
 newUser.lastName = 'Cunha';
+// Unknown Type
+let itemInput;
+let itemName;
+itemInput = 10;
+itemInput = 'Apple';
+if (itemInput === 'string') {
+    itemName = itemInput;
+}
+// Never Type
+function generateError(message, code) {
+    throw {
+        message: message,
+        errorCode: code
+    };
+}
+console.log(generateError('The application crashed', 500));
