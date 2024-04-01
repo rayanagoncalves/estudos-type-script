@@ -64,3 +64,14 @@ function generateError(message: string, code: number): never {
 }
 
 console.log(generateError('The application crashed', 500))
+
+// Alias type
+type Users = {
+    firstName: string
+    age: number 
+}
+
+const secondUser: Users = {
+    firstName: 'Ray',
+    age: 12
+}

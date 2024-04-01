@@ -53,3 +53,7 @@ function generateError(message, code) {
     };
 }
 console.log(generateError('The application crashed', 500));
+const secondUser = {
+    firstName: 'Ray',
+    age: 12
+};
