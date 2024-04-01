@@ -45,15 +45,22 @@ itemInput = 'Apple';
 if (itemInput === 'string') {
     itemName = itemInput;
 }
-// Never Type
-function generateError(message, code) {
-    throw {
-        message: message,
-        errorCode: code
-    };
-}
-console.log(generateError('The application crashed', 500));
 const secondUser = {
     firstName: 'Ray',
     age: 12
 };
+// Union Type
+function userInput(input1, input2) {
+    let result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+}
+const combineName = userInput('Apple', 'Avocado');
+console.log(combineName);
+const combinePrices = userInput(10, 2);
+console.log(combinePrices);

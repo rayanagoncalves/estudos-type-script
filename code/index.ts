@@ -56,14 +56,14 @@ if(itemInput === 'string') {
 }
 
 // Never Type
-function generateError(message: string, code: number): never {
-    throw {
-        message: message,
-        errorCode: code
-    }
-}
+// function generateError(message: string, code: number): never {
+//     throw {
+//         message: message,
+//         errorCode: code
+//     }
+// }
 
-console.log(generateError('The application crashed', 500))
+// console.log(generateError('The application crashed', 500))
 
 // Alias type
 type Users = {
@@ -75,3 +75,21 @@ const secondUser: Users = {
     firstName: 'Ray',
     age: 12
 }
+
+// Union Type
+function userInput(input1: number | string, input2: number | string) {
+    let result 
+    if(typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2
+    } else {
+        result = input1.toString() + input2.toString()
+    }
+
+    return result
+}
+
+const combineName = userInput('Apple', 'Avocado')
+console.log(combineName)
+
+const combinePrices = userInput(10, 2)
+console.log(combinePrices)
