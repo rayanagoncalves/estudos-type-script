@@ -93,3 +93,10 @@ console.log(combineName)
 
 const combinePrices = userInput(10, 2)
 console.log(combinePrices)
+
+//Literal Type
+let productPrice: 10 | 20 | 30
+let productSize: 'S' | 'M' | 'L' 
+
+productPrice = 30
+productSize = 'L'
