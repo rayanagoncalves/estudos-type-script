@@ -83,3 +83,6 @@ console.log(`${tau} is ${pi} times two.`);
 let pie;
 pie = 'blueberry';
 console.log(`I like to eat ${pie}-flavored pie`);
+// Day 3 - Exercise 3
+let isDouglas = true;
+console.log(`${isDouglas ? 'Oh, hi Douglas' : 'Who are you?'}`);
