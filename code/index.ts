@@ -94,9 +94,28 @@ console.log(combineName)
 const combinePrices = userInput(10, 2)
 console.log(combinePrices)
 
-//Literal Type
+// Literal Type
 let productPrice: 10 | 20 | 30
 let productSize: 'S' | 'M' | 'L' 
 
 productPrice = 30
 productSize = 'L'
+
+//Intersection
+type User = {
+    firstName: string,
+    age: number
+}
+
+type JobRole = {
+    id: number,
+    role: string
+}
+
+type Employee = User & JobRole
+const firstEmployee: Employee = {
+    firstName: 'Ray',
+    age: 24,
+    id: 12, 
+    role: 'Admin'
+}

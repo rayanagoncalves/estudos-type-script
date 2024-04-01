@@ -64,3 +64,14 @@ const combineName = userInput('Apple', 'Avocado');
 console.log(combineName);
 const combinePrices = userInput(10, 2);
 console.log(combinePrices);
+// Literal Type
+let productPrice;
+let productSize;
+productPrice = 30;
+productSize = 'L';
+const firstEmployee = {
+    firstName: 'Ray',
+    age: 24,
+    id: 12,
+    role: 'Admin'
+};
