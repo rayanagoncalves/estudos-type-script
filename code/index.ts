@@ -171,3 +171,5 @@ const stringsAndNumbers: (number | string)[] = [1, 'one', 2, 'two', 3, 'three'];
 const allMyArrays: (string | number)[][] = [sequence, animals, stringsAndNumbers];
 
 console.log(allMyArrays);
+
+console.log('Hello World')
