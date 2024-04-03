@@ -84,3 +84,23 @@ class Employee1 { constructor(public title: string, public salary: number) {} }
 const otherEmployee = new Employee1('Engineer', 10000);
 
 console.log(`The new employee title is ${otherEmployee.title} and they earn $${otherEmployee.salary}`)
+
+
+// Day 5 - Exercise 4
+
+interface UserSchema {
+    id: number,
+    name: string
+}
+
+class SecondUser implements UserSchema {
+    constructor(readonly id: number, public name: string) {}
+}
+
+const userDog = new SecondUser(1, 'Dog')
+
+console.log(userDog.id)
+
+userDog.name = 'Harold'
+
+console.log(`User: `, user)
