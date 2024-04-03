@@ -76,3 +76,11 @@ class MC {
 const mc = new MC()
 console.log(mc.greet('show'))
 console.log(mc.greet())
+
+// Day 5 - Exercise 4
+
+class Employee1 { constructor(public title: string, public salary: number) {} }
+
+const otherEmployee = new Employee1('Engineer', 10000);
+
+console.log(`The new employee title is ${otherEmployee.title} and they earn $${otherEmployee.salary}`)
