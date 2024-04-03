@@ -52,3 +52,15 @@ function addToCart(item: CartItem): void {
 }
 
 addToCart({id: 1, title: 'wallet'})
+
+// Day 5 - Exercise 2
+
+interface PersonIf {}
+
+class Person implements PersonIf {
+    constructor(public name: string, public age: number) {}
+}
+
+const jane = new Person('jane', 20)
+
+console.log(`${jane.name} is ${jane.age} years old.`)
