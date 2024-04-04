@@ -133,15 +133,25 @@ console.log(room)
 class OtherPerson {
     constructor(public firstName: string, public lastName: string, public age: number) {}
 
-    greet() {
-        console.log('Hi!')
+    get greet() {
+        return this.firstName + ' ' + this.lastName
     }
 }
 
 class OtherClient extends OtherPerson {
-    balance() {
-        console.log('Your balance is $100')
+    override get greet() {
+        return 'Dear ' + super.greet
+    }
+}
+
+class Staff extends OtherPerson {
+    override get greet() {
+        return 'Hi ' + super.greet
     }
 }
 
 let client = new OtherClient('Rayana', 'Cunha', 24)
+let staff = new OtherClient('Ana', 'Silva', 30)
+
+console.log(client.greet)
+console.log(staff.greet)
