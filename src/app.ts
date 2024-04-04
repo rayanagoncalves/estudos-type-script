@@ -104,3 +104,18 @@ console.log(userDog.id)
 userDog.name = 'Harold'
 
 console.log(`User: `, user)
+
+// ReadOnly access modifier
+
+class Movie {
+    readonly id: number
+    name: string
+
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+    }
+}
+
+let firstMovie = new Movie(1, 'Dejavu')
+console.log(firstMovie)

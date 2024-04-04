@@ -62,4 +62,13 @@ const userDog = new SecondUser(1, 'Dog');
 console.log(userDog.id);
 userDog.name = 'Harold';
 console.log(`User: `, user);
+// ReadOnly access modifier
+class Movie {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+let firstMovie = new Movie(1, 'Dejavu');
+console.log(firstMovie);
 //# sourceMappingURL=app.js.map
