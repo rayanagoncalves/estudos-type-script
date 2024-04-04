@@ -108,14 +108,12 @@ console.log(`User: `, user)
 // ReadOnly access modifier
 
 class Movie {
-    readonly id: number
-    name: string
-
-    constructor(id: number, name: string) {
-        this.id = id
-        this.name = name
-    }
+    constructor(
+        public readonly id: number, 
+        public name: string, 
+        private _price: number
+    ) {}
 }
 
-let firstMovie = new Movie(1, 'Dejavu')
+let firstMovie = new Movie(1, 'Dejavu', 20)
 console.log(firstMovie)
