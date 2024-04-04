@@ -78,4 +78,20 @@ room.A201 = 'Andre';
 room.A202 = 'Ana';
 console.log('Teste');
 console.log(room);
+class OtherPerson {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    greet() {
+        console.log('Hi!');
+    }
+}
+class OtherClient extends OtherPerson {
+    balance() {
+        console.log('Your balance is $100');
+    }
+}
+let client = new OtherClient('Rayana', 'Cunha', 24);
 //# sourceMappingURL=app.js.map

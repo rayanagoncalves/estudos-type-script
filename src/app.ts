@@ -129,3 +129,19 @@ room.A202 = 'Ana'
 
 console.log('Teste')
 console.log(room)
+
+class OtherPerson {
+    constructor(public firstName: string, public lastName: string, public age: number) {}
+
+    greet() {
+        console.log('Hi!')
+    }
+}
+
+class OtherClient extends OtherPerson {
+    balance() {
+        console.log('Your balance is $100')
+    }
+}
+
+let client = new OtherClient('Rayana', 'Cunha', 24)
