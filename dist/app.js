@@ -71,4 +71,11 @@ class Movie {
 }
 let firstMovie = new Movie(1, 'Dejavu');
 console.log(firstMovie);
+class HotelRoom {
+}
+let room = new HotelRoom();
+room.A201 = 'Andre';
+room.A202 = 'Ana';
+console.log('Teste');
+console.log(room);
 //# sourceMappingURL=app.js.map

@@ -111,9 +111,21 @@ class Movie {
     constructor(
         public readonly id: number, 
         public name: string, 
-        private _price: number
+      //  private _price: number
     ) {}
 }
 
-let firstMovie = new Movie(1, 'Dejavu', 20)
+let firstMovie = new Movie(1, 'Dejavu')
 console.log(firstMovie)
+
+class HotelRoom {
+    [roomNumber: string]: string // Index Signatures
+}
+
+let room = new HotelRoom()
+
+room.A201 = 'Andre'
+room.A202 = 'Ana'
+
+console.log('Teste')
+console.log(room)
