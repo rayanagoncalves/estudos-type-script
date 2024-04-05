@@ -102,4 +102,37 @@ let client = new OtherClient('Rayana', 'Cunha', 24);
 let staff = new OtherClient('Ana', 'Silva', 30);
 console.log(client.greet);
 console.log(staff.greet);
+const persons = [
+    {
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
+    {
+        name: 'Jane Doe',
+        age: 32,
+        role: 'Administrator'
+    },
+    {
+        name: 'Kate Müller',
+        age: 23,
+        occupation: 'Astronaut.'
+    },
+    {
+        name: 'Bruce Willis',
+        age: 64,
+        role: 'World saver.'
+    }
+];
+function logPerson(person) {
+    let additionalInformation;
+    if ('role' in person) {
+        additionalInformation = person.role;
+    }
+    else {
+        additionalInformation = person.occupation;
+    }
+    console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
+}
+persons.forEach(logPerson);
 //# sourceMappingURL=app.js.map
